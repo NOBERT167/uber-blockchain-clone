@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Uber NextJs Blockchain Clone
+
+- Web 3.0
+- Metamask
+- NextJS 12
+- Sanity.io
+- Mapbox
+- TailwindCSS
 
 ## Getting Started
 
-First, run the development server:
+> Make sure you have Metamask browser extension installed with a wallet attached.  
+> No real transactions will take place. 😊
+
+<br />
+
+### 1) Create your .env file
+
+Use `.env.template` to create your own `.env` file.  
+Paste in your Sanity.io and Mapbox project/token info.
+
+<br />
+
+### 2) Install dependencies
+
+```bash
+npm install
+```
+
+<br />
+
+### 3) Create your Sanity.io project
+
+Create a new project at [Sanity.io](https://www.sanity.io/).
+
+Then, go into the `studio` (sanity studio) folder. Use `sanity.json.template` to create `sanity.json` file. Paste in your Sanity project.name and api.projectId values.
+
+Run `npm install` to install the studio dependencies.
+
+Run `sanity start` and open [http://localhost:3333](http://localhost:3333)
+
+Create data for Rides by referring to `sample-data/rides.json` and PNGs from `assets/rides`
+
+Run `sanity deploy` to deploy your local changes to Sanity.io.
+
+For more info [https://www.sanity.io/docs/getting-started-with-sanity-cli](https://www.sanity.io/docs/getting-started-with-sanity-cli)
+
+<br />
+
+### 4) Run the NextJS App
+
+Then, from this project's root folder, run the NextJS development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br/>
+<br/>
